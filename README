@@ -1,0 +1,10 @@
+Hi Cammy,
+
+- To keep the solution simple, I chose to copy the org.jcodec.api.SequenceEncoder class but fix to 1 FPS (timescale)
+  when adding a new MP4Packet. This class can easily be modified to have a FPS parameter specified in the constructor.
+
+- I wasn't sure hot to handle the parameterisation of encode method so I chose to implement just type java.io.File but
+  class could easily be made generic T and passed a function value T => BufferedImage to convert the elements of Seq[T]
+  to Seq[BufferedImage]
+
+- To run tests execute 'sbt test' on the command line and generating the jar with 'sbt package'

@@ -1,0 +1,12 @@
+name := "video2"
+
+version := "1.0"
+
+scalaVersion := "2.12.1"
+
+val scalazVersion = "7.2.8"
+
+libraryDependencies ++= Seq("org.scalaz" %% "scalaz-core" % scalazVersion,
+                            "org.scalaz" %% "scalaz-concurrent" % scalazVersion,
+                            "org.scalatest" %% "scalatest" % "3.0.1" % "test",
+                            "org.jcodec" % "jcodec-javase" % "0.1.9")
